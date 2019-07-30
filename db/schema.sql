@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS burger_DB;
+CREATE DATABASE burger_DB;
+
+USE bamazon_DB;
+
+CREATE TABLE yourBurgers(
+  ID INT NOT NULL AUTO_INCREMENT,
+  burger_name VARCHAR(105) NOT NULL,
+  devoured BOOLEAN() NOT NULL,
+  PRIMARY KEY (id)
+);
+
