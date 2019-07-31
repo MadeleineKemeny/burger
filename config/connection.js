@@ -1,24 +1,23 @@
-// * Inside the `connection.js` file, setup the code to connect Node to MySQL.
+// dependencies
+var mysql = require('mysql');
 
-var mysql = require("mysql")
-
+// declaring connection parameters
 var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "madeleinekemeny",
-  password: "Jungyoon1",
-  database: "burgers_db"
+    host: "localhost",
+    port: 3306,
+    user: "madeleinekemeny",
+    password: "Jungyoon1",
+    database: "burgers_db"
+  });
+
+// establishing connection to DB
+connection.connect(function (error) {
+    if (error) {
+        console.error("Error connecting: ", error.stack);
+        return;
+    }
+    console.log("Connected as id " + connection.threadId);
 });
 
-connection.connect(function(err) {
-  if (err) throw err;
-  console.log("connected as id " + connection.threadId);
-  afterConnection();
-});
-
-// make connecttion... am i missing a line of code?
-
-function afterConnection(){
-//    * Export the connection.
+// export connection method
 module.exports = connection;
-}
