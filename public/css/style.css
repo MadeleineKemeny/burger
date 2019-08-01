@@ -1,14 +1,18 @@
+.container-fluid{
+  padding: 50px;
+}
+
 #bg {
-   
     background-image: url(https://images4.alphacoders.com/276/276756.jpg);
-    height: 100%;
+    max-height: fit-content;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-  li {
+  li, ul {
     line-height: 200%;
+    font-weight: bold;
   }
 
   button {
@@ -20,6 +24,7 @@
     color: red;
     background-color: black;
     font-weight: bold;
+    margin-bottom: 25px;
   }
 
   .btn-add:hover {
@@ -28,6 +33,43 @@
     font-weight: bold;
   }
 
-  input {
-    margin-right: 20px;
+  .card{
+    background-color:rgba(250, 232, 133, 0.8);
+    padding-bottom: 25px;
+    text-align: center;
   }
+
+  .card-body {
+    padding-bottom: 0px
+  }
+
+ #menu {
+  background-color:rgba(255, 255, 255, 0.4);
+  margin: 25px;
+ }
+
+  .devourBurger, .unBurger{
+    background-color: red;
+    font-weight: bold;
+    font-size: 80%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+
+  .devourBurger:hover, .unBurger:hover {
+    color: white;
+    background-color: red;
+    font-weight: bold;
+  }
+
+  h1 {
+    text-shadow: 0 0 3px white, 0 0 5px white;
+    border: orange;
+    border-style: dotted;
+    padding: 25px;
+  }
+
+.col-md-6 {
+  margin-top: 0;
+}

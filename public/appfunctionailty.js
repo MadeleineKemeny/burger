@@ -3,20 +3,23 @@ console.log("javascript loaded")
 
 $("#addburger").on("click", function (event) {
     event.preventDefault();
-    console.log("click")
-    var addBurger = {
-        name: $("#burgerName").val(),
-        devoured: 0
-    };
-    console.log(addBurger);
+    var name = $("#burgerName").val().trim();
+    if (name) {
+        console.log("click")
+        var addBurger = {
+            name: name,
+            devoured: 0
+        };
+        console.log(addBurger);
 
-    $.ajax("/api/burgers", {
-        type: "POST",
-        data: addBurger
-    }).then(function () {
-        console.log("New burger added!");
-        location.reload();
-    });
+        $.ajax("/api/burgers", {
+            type: "POST",
+            data: addBurger
+        }).then(function () {
+            console.log("New burger added!");
+            location.reload();
+        });
+    }
 });
 
 

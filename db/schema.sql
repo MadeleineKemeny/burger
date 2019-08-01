@@ -1,12 +1,13 @@
-DROP DATABASE IF EXISTS burger_DB;
-CREATE DATABASE burger_DB;
+DROP DATABASE IF EXISTS burgers_db;
+DROP DATABASE IF EXISTS burger_db;
+CREATE DATABASE burger_db;
 
-USE burger_DB;
+USE burger_db;
 
-CREATE TABLE yourBurgers(
+CREATE TABLE burgers(
   ID INT NOT NULL AUTO_INCREMENT,
   burger_name VARCHAR(100) NOT NULL,
-  devoured BOOLEAN() DEFAULT FALSE,
+  devoured BOOLEAN DEFAULT FALSE,
   PRIMARY KEY (id)
 );
 
