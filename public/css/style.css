@@ -63,6 +63,11 @@
     font-weight: bold;
   }
 
+  img {
+    width: 75px;
+    margin: 15px;
+  }
+
   h1 {
     text-shadow: 0 0 3px white, 0 0 5px white;
     border: orange;
