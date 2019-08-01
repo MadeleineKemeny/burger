@@ -6,3 +6,28 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  li {
+    line-height: 200%;
+  }
+
+  button {
+    line-height: 100%;
+    border-radius: 15px;
+  }
+
+  .btn-add {
+    color: red;
+    background-color: black;
+    font-weight: bold;
+  }
+
+  .btn-add:hover {
+    color: yellow;
+    background-color: black;
+    font-weight: bold;
+  }
+
+  input {
+    margin-right: 20px;
+  }
