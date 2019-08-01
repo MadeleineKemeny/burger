@@ -1,11 +1,63 @@
 {{!-- this is html for layout and replaces triple-bracketed body in main--}}
-<div class="container">
+<div class="container" id="bg">
 
     <div class="jumbotron">
         <h1 class="display-4">Welcome to Eat-Da-Burger!</h1>
-        <p class="lead">We have several burgers to suggest; customize your order and we'll make it!</p>
+        <p class="lead">We have several recommendations, but you can build your own!</p>
         <hr class="my-4">
-        <h2>Select a burger</h2>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Place your order</a>
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Add a burger below</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-9">
+                <form class="burgerForm form-inline">
+                    <div class="form-group">
+                        <label for="">
+                        </label>
+                        <input type="text" class="form-control" id="burgerName" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <button id="addburger" class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+
+
+
+        </div>
+
     </div>
+    <div class="row">
+        <div class="col-lg-5">On the menu:
+            <ul>
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        <li>
+                            {{this.burger_name}}
+                            <button class="devourBurger" type="button" data-id="{{this.ID}}">EAT IT</button>
+
+                        </li>
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">In your tummy:
+            <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <li>{{this.burger_name}}
+                            <button class="unBurger" type="button" data-id="{{this.ID}}">Seconds please!</button>
+                        </li>
+
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+        </div>
+    </div>
+
+
+
+
 </div>

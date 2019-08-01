@@ -27,6 +27,7 @@ function objToSql(object) {
 var orm = {
   selectAll: function(tableInput, callback) {
     var queryString = "SELECT * FROM " + tableInput + ";";
+    console.log(queryString)
     connection.query(queryString, function(error, result) {
       if (error) throw error;
       callback(result);
@@ -51,8 +52,8 @@ var orm = {
   },
   updateOne: function(table, objColVals, condition, callback) {
     var queryString =
-      "UPDATE " + table + " SET " + objToSql(objColVals) + " WHERE" + condition;
-
+      "UPDATE " + table + " SET " + objToSql(objColVals) + " WHERE " + condition;
+    var values = [];
     console.log(queryString);
     connection.query(queryString, values, function(error, result) {
       if (error) throw error;
