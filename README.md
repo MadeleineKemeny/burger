@@ -15,4 +15,4 @@ It has also been deployed on Heroku: https://mighty-tundra-56584.herokuapp.com
 And a preview and link is also on my portfolio site: https://madeleinekemeny.github.io/portfolio2/
 
 ## Appreciation
-Those Bootstrap goofballs... yes! And major props for my tutor Isabel Arcones for translating the process into English and helping me understand how everything needed to come together through syntax. My best code-tester/corrector is Adarsh Bhat. And gratitude to Philip Loy for the frequent blank looks he gets from me during class lectures that don't prevent him from answering questions and shoving me along in the process to get it done!
+Those Bootstrap goofballs... yes! And major props for my tutor Isabel Arcones for translating the process into English and helping me understand how everything needed to come together through syntax. My best code-tester/corrector is Adarsh Bhat. And gratitude to Philip Loy for the frequent blank looks he gets from me during class lectures that don't prevent him from answering questions and shoving me along in the process to get it done! And last but not least: Daniel Fripp for working with me and helping me get my code started.
